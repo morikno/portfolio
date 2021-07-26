@@ -1,0 +1,111 @@
+$margin-roop: 5;//marginの作成数
+$margin-rate: 10;//marginの段階
+
+//$margin-roopが5で$margin-rateが10の場合
+//以下のようにmarginが作成される
+//1 * 10 = 10
+//2 * 10 = 20
+//3 * 10 = 30
+//4 * 10 = 40
+//5 * 10 = 50
+
+//使い方
+// <div class="p-row">
+// 	<div class="p-col-tb-6">
+// 	</div>
+// 	<div class="p-col-tb-6">
+// 	</div>
+// </div>
+
+//上記はタブレット以上の幅で2カラム
+//※仕組みはBootstrapのグリッドシステムとほぼ同じ
+
+//余白（margin）が欲しい場合
+// <div class="p-row -margin-tb-50">
+// 	<div class="p-col-tb-6">
+// 	</div>
+// 	<div class="p-col-tb-6">
+// 	</div>
+// </div>
+//上記は左右に50pxの例
+
+.p-row {
+  display: flex;
+  flex-wrap: wrap;
+  > * {
+    //下マージン
+    @for $margin from 1 through $margin-roop {
+      @include max-screen($tb - 1) {
+        @include state(".p-row", #{".-margin-tb-y-" + $margin * $margin-rate}) {
+          &:not(:first-child) {
+            margin-top: #{$margin * $margin-rate + "px"};
+          }
+        }
+      }
+      @include max-screen($sp - 1) {
+        @include state(".p-row", #{".-margin-sp-y-" + $margin * $margin-rate}) {
+          &:not(:first-child) {
+            margin-top: #{$margin * $margin-rate + "px"};
+          }
+        }
+      }
+      @include max-screen($sp-s - 1) {
+        @include state(".p-row", #{".-margin-sp-s-y-" + $margin * $margin-rate}) {
+          &:not(:first-child) {
+            margin-top: #{$margin * $margin-rate + "px"};
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@for $nam from 1 through 12 {
+  .p-col-pc-#{$nam},
+  .p-col-tb-#{$nam},
+  .p-col-sp-#{$nam},
+  .p-col-sp-s-#{$nam} {
+    width: 100%;
+  }
+  @include min-screen($pc) {
+    .p-col-pc-#{$nam} {
+      @include col(grid-12($nam));
+      @for $margin from 1 through $margin-roop {
+        @include state(".p-row", #{".-margin-pc-" + $margin * $margin-rate}) {
+          @include col(grid-12($nam), $margin * $margin-rate, $margin * $margin-rate, #{".p-row.-margin-pc-" + $margin * $margin-rate});
+        }
+      }
+    }
+  }
+  @include min-screen($tb) {
+    .p-col-tb-#{$nam} {
+      @include col(grid-12($nam));
+      @for $margin from 1 through $margin-roop {
+        @include state(".p-row", #{".-margin-tb-" + $margin * $margin-rate}) {
+          @include col(grid-12($nam), $margin * $margin-rate, $margin * $margin-rate, #{".p-row.-margin-tb-" + $margin * $margin-rate});
+        }
+      }
+    }
+  }
+  @include min-screen($sp) {
+    .p-col-sp-#{$nam} {
+      @include col(grid-12($nam));
+      @for $margin from 1 through $margin-roop {
+        @include state(".p-row", #{".-margin-sp-" + $margin * $margin-rate}) {
+          @include col(grid-12($nam), $margin * $margin-rate, $margin * $margin-rate, #{".p-row.-margin-sp-" + $margin * $margin-rate});
+        }
+      }
+    }
+  }
+  @include min-screen($sp-s) {
+    .p-col-sp-s-#{$nam} {
+      @include col(grid-12($nam));
+      @for $margin from 1 through $margin-roop {
+        @include state(".p-row", #{".-margin-sp-s-" + $margin * $margin-rate}) {
+          @include col(grid-12($nam), $margin * $margin-rate, $margin * $margin-rate, #{".p-row.-margin-sp-s-" + $margin * $margin-rate});
+        }
+      }
+    }
+  }
+}

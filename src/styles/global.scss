@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+//foundation サイト全体のベース
+@import "foundation/functions/_is-inside.scss";
+@import "foundation/functions/_parent.scss";
+@import "foundation/functions/_remove-unit.scss";
+@import "foundation/functions/_screen.scss";
+@import "foundation/mixin/_aspect-ratio.scss";
+@import "foundation/mixin/_col.scss";
+@import "foundation/mixin/_font-size.scss";
+@import "foundation/mixin/_hover.scss";
+@import "foundation/mixin/_lhCrop.scss";
+@import "foundation/mixin/_mediaQueries.scss";
+@import "foundation/mixin/_mixin.scss";
+@import "foundation/mixin/_myfont.scss";
+@import "foundation/mixin/_object-fit.scss";
+@import "foundation/mixin/_pcOnly.scss";
+@import "foundation/mixin/_replace.scss";
+@import "foundation/mixin/_state.scss";
+@import "foundation/mixin/_visually-hidden.scss";
+@import "foundation/mixin/standard-el/_dl.scss";
+@import "foundation/mixin/standard-el/_figure.scss";
+@import "foundation/mixin/standard-el/_h.scss";
+@import "foundation/mixin/standard-el/_img.scss";
+@import "foundation/mixin/standard-el/_ol.scss";
+@import "foundation/mixin/standard-el/_p.scss";
+@import "foundation/mixin/standard-el/_spacer.scss";
+@import "foundation/mixin/standard-el/_table.scss";
+@import "foundation/mixin/standard-el/_ul.scss";
+@import "foundation/mixin/utility/_reset-button.scss";
+@import "foundation/mixin/utility/_reset-input.scss";
+@import "foundation/mixin/utility/_reset-select.scss";
+@import "foundation/mixin/utility/_reset-textarea.scss";
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+
+@import "foundation/variable/_break_points.scss";
+@import "foundation/variable/_color.scss";
+@import "foundation/variable/_easing.scss";
+@import "foundation/variable/_keyframes.scss";
+
+@import "foundation/base/myfont";
+@import "foundation/base/sanitize";
+@import "foundation/base/base";
+// @import "foundation/base/grid-system";//グリッドシステム 使用したい場合はコメントを外す
+
+//structure プラグインなどの外部からのDLしたcssなど
+@import "structure/fullscreenmenu";
+@import "structure/js_fit-sidebar";
+@import "structure/js_megamenu";
+@import "structure/js_swiper";
+@import "structure/js_smartphoto";
+@import "structure/js_tablefix";
+@import "structure/js_datepicker";
+@import "structure/js_highlightjs-theme";
+@import "structure/js_highlightjs";
+@import "structure/js_cursor";
+@import "structure/js_tab";
+@import "structure/js_loader";
+
+//pages 各ページの固有スタイル
+
+//utility 便利スタイル
+@import "utility/_autoSpacer.scss";
+@import "utility/_highlighter.scss";
+@import "utility/_show.scss";
+@import "utility/_utility.scss";

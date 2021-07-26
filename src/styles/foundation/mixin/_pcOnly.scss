@@ -1,0 +1,5 @@
+@mixin pcOnly ($pcOnlyClass: ".ua-pc") {
+	@at-root #{$pcOnlyClass" " + &} {
+		@content
+	}
+}

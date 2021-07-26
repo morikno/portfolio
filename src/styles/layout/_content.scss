@@ -1,0 +1,12 @@
+.l-content-wrraper {
+	max-width: 1070px;
+	width: 100%;
+	padding: 0 40px;
+	margin: 0 auto;;
+	&.is-small {
+		max-width: 780px;
+	}
+	@include max-screen($sp) {
+		padding: 0 30px;
+	}
+}//l-content-wrraper

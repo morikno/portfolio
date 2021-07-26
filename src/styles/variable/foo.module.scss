@@ -1,0 +1,88 @@
+@import "../foundation/functions/_is-inside.scss";
+@import "../foundation/functions/_parent.scss";
+@import "../foundation/functions/_remove-unit.scss";
+@import "../foundation/functions/_screen.scss";
+@import "../foundation/mixin/_aspect-ratio.scss";
+@import "../foundation/mixin/_col.scss";
+@import "../foundation/mixin/_font-size.scss";
+@import "../foundation/mixin/_hover.scss";
+@import "../foundation/mixin/_lhCrop.scss";
+@import "../foundation/mixin/_mediaQueries.scss";
+@import "../foundation/mixin/_mixin.scss";
+@import "../foundation/mixin/_myfont.scss";
+@import "../foundation/mixin/_object-fit.scss";
+@import "../foundation/mixin/_pcOnly.scss";
+@import "../foundation/mixin/_replace.scss";
+@import "../foundation/mixin/_state.scss";
+@import "../foundation/mixin/_visually-hidden.scss";
+@import "../foundation/mixin/standard-el/_dl.scss";
+@import "../foundation/mixin/standard-el/_figure.scss";
+@import "../foundation/mixin/standard-el/_h.scss";
+@import "../foundation/mixin/standard-el/_img.scss";
+@import "../foundation/mixin/standard-el/_ol.scss";
+@import "../foundation/mixin/standard-el/_p.scss";
+@import "../foundation/mixin/standard-el/_spacer.scss";
+@import "../foundation/mixin/standard-el/_table.scss";
+@import "../foundation/mixin/standard-el/_ul.scss";
+@import "../foundation/mixin/utility/_reset-button.scss";
+@import "../foundation/mixin/utility/_reset-input.scss";
+@import "../foundation/mixin/utility/_reset-select.scss";
+@import "../foundation/mixin/utility/_reset-textarea.scss";
+
+@import "../foundation/variable/_break_points.scss";
+@import "../foundation/variable/_color.scss";
+@import "../foundation/variable/_easing.scss";
+@import "../foundation/variable/_keyframes.scss";
+
+.heading2Xl {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingXl {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.colorInherit {
+  color: inherit;
+}
+
+.padding1px {
+  padding-top: 1px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin: 0 0 1.25rem;
+}
+
+.lightText {
+  color: #666;
+}
