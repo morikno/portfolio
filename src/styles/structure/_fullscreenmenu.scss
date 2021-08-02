@@ -9,9 +9,6 @@ $fullScreenMenu_duration: 0.3s;
   border: solid 1px #ddd;
   cursor: pointer;
   z-index: 1001;
-  &.is-open {
-    // background: #002241;
-  }
 }
 
 .fullScreenMenu-button__line {

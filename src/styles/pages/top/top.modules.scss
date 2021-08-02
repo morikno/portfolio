@@ -9,41 +9,19 @@
 @import "../foundation/mixin/_lhCrop.scss";
 @import "../foundation/mixin/_mediaQueries.scss";
 @import "../foundation/mixin/_mixin.scss";
-@import "../foundation/mixin/_myfont.scss";
 @import "../foundation/mixin/_object-fit.scss";
 @import "../foundation/mixin/_pcOnly.scss";
 @import "../foundation/mixin/_replace.scss";
 @import "../foundation/mixin/_state.scss";
 @import "../foundation/mixin/_visually-hidden.scss";
-@import "../foundation/mixin/standard-el/_dl.scss";
-@import "../foundation/mixin/standard-el/_figure.scss";
-@import "../foundation/mixin/standard-el/_h.scss";
-@import "../foundation/mixin/standard-el/_img.scss";
-@import "../foundation/mixin/standard-el/_ol.scss";
-@import "../foundation/mixin/standard-el/_p.scss";
-@import "../foundation/mixin/standard-el/_spacer.scss";
-@import "../foundation/mixin/standard-el/_table.scss";
-@import "../foundation/mixin/standard-el/_ul.scss";
 @import "../foundation/mixin/utility/_reset-button.scss";
 @import "../foundation/mixin/utility/_reset-input.scss";
 @import "../foundation/mixin/utility/_reset-select.scss";
 @import "../foundation/mixin/utility/_reset-textarea.scss";
-
 @import "../foundation/variable/_break_points.scss";
 @import "../foundation/variable/_color.scss";
 @import "../foundation/variable/_easing.scss";
 @import "../foundation/variable/_keyframes.scss";
-
-
-// @import "../foundation/base/grid-system";//グリッドシステム 使用したい場合はコメントを外す
-
-//layout ページの骨格
-@import "../layout/_breadcrumb.scss";
-@import "../layout/_col.scss";
-@import "../layout/_content.scss";
-@import "../layout/_footer.scss";
-@import "../layout/_header.scss";
-@import "../layout/_section.scss";
 
 //component 使い回しパーツ
 @import "../object/component/_common-el.scss";
@@ -53,9 +31,6 @@
 @import "../object/component/ui/form/_text.scss";
 @import "../object/component/ui/form/_textarea.scss";
 
-//project 使い回しパーツよりさらに狭い範囲のパーツ
-@import "../object/project/_content.scss";
-@import "../object/project/_standard.scss";
 
 .heading {
  padding: 16px;

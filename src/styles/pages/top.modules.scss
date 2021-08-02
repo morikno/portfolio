@@ -1,6 +1,3 @@
-@charset "UTF-8";
-
-//foundation サイト全体のベース
 @import "styles/foundation/functions/_is-inside.scss";
 @import "styles/foundation/functions/_parent.scss";
 @import "styles/foundation/functions/_remove-unit.scss";
@@ -17,42 +14,45 @@
 @import "styles/foundation/mixin/_replace.scss";
 @import "styles/foundation/mixin/_state.scss";
 @import "styles/foundation/mixin/_visually-hidden.scss";
-
 @import "styles/foundation/mixin/utility/_reset-button.scss";
 @import "styles/foundation/mixin/utility/_reset-input.scss";
 @import "styles/foundation/mixin/utility/_reset-select.scss";
 @import "styles/foundation/mixin/utility/_reset-textarea.scss";
-
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
 
 @import "styles/foundation/variable/_break_points.scss";
 @import "styles/foundation/variable/_color.scss";
 @import "styles/foundation/variable/_easing.scss";
 @import "styles/foundation/variable/_keyframes.scss";
 
-@import "styles/foundation/base/sanitize";
-@import "styles/foundation/base/base";
+
 // @import "styles/foundation/base/grid-system";//グリッドシステム 使用したい場合はコメントを外す
 
-//structure プラグインなどの外部からのDLしたcssなど
-@import "styles/structure/fullscreenmenu";
-@import "styles/structure/js_fit-sidebar";
-@import "styles/structure/js_megamenu";
-@import "styles/structure/js_swiper";
-@import "styles/structure/js_smartphoto";
-@import "styles/structure/js_tablefix";
-@import "styles/structure/js_datepicker";
-@import "styles/structure/js_highlightjs-theme";
-@import "styles/structure/js_highlightjs";
-@import "styles/structure/js_cursor";
-@import "styles/structure/js_tab";
-@import "styles/structure/js_loader";
+//layout ページの骨格
+@import "styles/layout/_breadcrumb.scss";
+@import "styles/layout/_col.scss";
+@import "styles/layout/_content.scss";
+@import "styles/layout/_footer.scss";
+@import "styles/layout/_header.scss";
+@import "styles/layout/_section.scss";
 
-//pages 各ページの固有スタイル
+//component 使い回しパーツ
+@import "styles/object/component/_common-el.scss";
+@import "styles/object/component/ui/form/_checkbox.scss";
+@import "styles/object/component/ui/form/_file.scss";
+@import "styles/object/component/ui/form/_radio.scss";
+@import "styles/object/component/ui/form/_text.scss";
+@import "styles/object/component/ui/form/_textarea.scss";
 
-//utility 便利スタイル
-@import "styles/utility/_autoSpacer.scss";
-@import "styles/utility/_highlighter.scss";
-@import "styles/utility/_show.scss";
-@import "styles/utility/_utility.scss";
+//project 使い回しパーツよりさらに狭い範囲のパーツ
+@import "styles/object/project/_content.scss";
+@import "styles/object/project/_standard.scss";
+
+.heading {
+ padding: 16px;
+ color: steelblue;
+ font-size: 24px;
+ font-weight: bold;
+ @include max-screen($sp){
+  color: black;
+ }
+}
