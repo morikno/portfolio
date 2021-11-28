@@ -12,7 +12,7 @@ const Header = (props) => {
 
           <li className={topStyles.navList}><Link href="/"><a><span className={topStyles.navListEn}>PRODUCT</span><span className={topStyles.navListJa}>制作物</span></a></Link></li>
 
-          <li className={topStyles.navList}><Link href="/"><a><span className={topStyles.navListEn}>ARTICLE</span><span className={topStyles.navListJa}>記事一覧</span></a></Link></li>
+          <li className={topStyles.navList}><Link href="/"><a><span className={topStyles.navListEn}>ARTICLE</span><span className={topStyles.navListJa}>記事カテゴリー</span></a></Link></li>
 
           <li className={topStyles.navList}><Link href="/"><a><span className={topStyles.navListEn}>CONTACT</span><span className={topStyles.navListJa}>問い合わせ</span></a></Link></li>
 
