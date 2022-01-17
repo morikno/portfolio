@@ -1,0 +1,49 @@
+@import "styles/foundation/functions/_is-inside.scss";
+@import "styles/foundation/functions/_parent.scss";
+@import "styles/foundation/functions/_remove-unit.scss";
+@import "styles/foundation/functions/_screen.scss";
+@import "styles/foundation/mixin/_aspect-ratio.scss";
+@import "styles/foundation/mixin/_col.scss";
+@import "styles/foundation/mixin/_font-size.scss";
+@import "styles/foundation/mixin/_hover.scss";
+@import "styles/foundation/mixin/_lhCrop.scss";
+@import "styles/foundation/mixin/_mediaQueries.scss";
+@import "styles/foundation/mixin/_mixin.scss";
+@import "styles/foundation/mixin/_object-fit.scss";
+@import "styles/foundation/mixin/_pcOnly.scss";
+@import "styles/foundation/mixin/_replace.scss";
+@import "styles/foundation/mixin/_state.scss";
+@import "styles/foundation/mixin/_visually-hidden.scss";
+
+@import "styles/foundation/mixin/utility/_reset-button.scss";
+@import "styles/foundation/mixin/utility/_reset-input.scss";
+@import "styles/foundation/mixin/utility/_reset-select.scss";
+@import "styles/foundation/mixin/utility/_reset-textarea.scss";
+
+@import "styles/foundation/variable/_break_points.scss";
+@import "styles/foundation/variable/_color.scss";
+@import "styles/foundation/variable/_easing.scss";
+@import "styles/foundation/variable/_keyframes.scss";
+
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  padding:48px;
+  overflow: hidden;
+
+}
+
+.left{
+  width: 35%;
+   padding-right: 48px;
+}
+.right{
+  width: 65%;
+  img{
+    width: 100%;
+  }
+}
+
