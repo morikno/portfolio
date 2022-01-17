@@ -1,43 +1,38 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "styles/components/layout.module.scss";
-import utilStyles from 'styles/utility/utils.module.scss'
 import Link from "next/link";
 import Header from "components/header";
 
-const name = "[Your Name]";
-export const siteTitle = "Next.js Sample Website";
+// const name: string = "morikno";
+export const siteTitle: string = "morikno | 好きなことで溢れた人生";
+export const siteDescription: string = "福岡在住のサラリーマンデザイナー、デザイン、ライフスタイル、趣味のキャンプを軸に日々更新していきます。";
 
 export default function Layout({
   children,
   home,
 }: {
-  children: React.ReactNode;
+  children:any;
   home?: boolean;
-}) {
+}): any {
   return (
     <div className={styles.container}>
       <Head>
+        <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content={siteDescription}
         />
-        <meta
-          property="og:image"
-        />
+        
+        <meta property="og:image" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <main>{children}</main>
-      <Header />
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      <main>
+        <Header />
+        {children}
+      </main>
     </div>
   );
 }

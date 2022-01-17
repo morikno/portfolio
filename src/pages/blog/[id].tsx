@@ -5,6 +5,10 @@ export default function BlogId({ blog }) {
     <main>
       <h1>{blog.title}</h1>
       <p>{blog.publishedAt}</p>
+      <p>{blog.category && `${blog.category.name}`}</p>
+      <picture>
+      <img src={`${blog.ogimage.url}`} />
+      </picture>
       <div
         dangerouslySetInnerHTML={{
           __html: `${blog.body}`,

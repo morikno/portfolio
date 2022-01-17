@@ -1,0 +1,117 @@
+@import "styles/foundation/functions/_is-inside.scss";
+@import "styles/foundation/functions/_parent.scss";
+@import "styles/foundation/functions/_remove-unit.scss";
+@import "styles/foundation/functions/_screen.scss";
+@import "styles/foundation/mixin/_aspect-ratio.scss";
+@import "styles/foundation/mixin/_col.scss";
+@import "styles/foundation/mixin/_font-size.scss";
+@import "styles/foundation/mixin/_hover.scss";
+@import "styles/foundation/mixin/_lhCrop.scss";
+@import "styles/foundation/mixin/_mediaQueries.scss";
+@import "styles/foundation/mixin/_mixin.scss";
+@import "styles/foundation/mixin/_object-fit.scss";
+@import "styles/foundation/mixin/_pcOnly.scss";
+@import "styles/foundation/mixin/_replace.scss";
+@import "styles/foundation/mixin/_state.scss";
+@import "styles/foundation/mixin/_visually-hidden.scss";
+
+@import "styles/foundation/mixin/utility/_reset-button.scss";
+@import "styles/foundation/mixin/utility/_reset-input.scss";
+@import "styles/foundation/mixin/utility/_reset-select.scss";
+@import "styles/foundation/mixin/utility/_reset-textarea.scss";
+
+@import "styles/foundation/variable/_break_points.scss";
+@import "styles/foundation/variable/_color.scss";
+@import "styles/foundation/variable/_easing.scss";
+@import "styles/foundation/variable/_keyframes.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 48px;
+}
+
+.links {
+  display: flex;
+}
+
+.linksWrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.linksWrap > li {
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:last-child {
+    padding-right: 0px;
+
+  }
+  &:after {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #0a061a;
+    display: block;
+    margin-left: 16px;
+  }
+}
+
+.navBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navList {
+  font-size: 12px;
+  line-height: 1.5;
+  font-style: normal;
+  padding: 8px;
+  position: relative;
+  width: 96px;
+  &:not(:last-of-type) {
+    margin-right: 24px;
+  }
+  span {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px;
+  }
+}
+
+.navListEn {
+  font-weight: bold;
+  color: #242423, 100%;
+  transform: rotateX(0deg);
+  transform-origin: 0 50% -9px;
+  transform-style: preserve-3d;
+  transition: 0.3s;
+  @include state(".navList", ":hover") {
+    transform: rotateX(90deg);
+  }
+}
+
+.navListJa {
+  background: #242423;
+  color: #fff;
+  transform: rotateX(-90deg);
+  transform-origin: 0 50% -9px;
+  transform-style: preserve-3d;
+  transition: 0.4s;
+  @include state(".navList", ":hover") {
+    transform: rotateX(0deg);
+  }
+}
+
+.logo{
+  width: 136px;
+}

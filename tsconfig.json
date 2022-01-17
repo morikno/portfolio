@@ -17,7 +17,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "paths":{
+      "@*":[".*"],
+      "@blog":["./framework/blog"]
+    }
   },
   "include": [
     "next-env.d.ts",
