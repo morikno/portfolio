@@ -13,7 +13,7 @@ const Hero = (props) => {
     <section className={heroStyles.hero}>
       <div className={heroStyles.left}>
         <div>
-          <h2>
+          <h2 className={heroStyles.commonH2}>
             好きなことで<br />溢れた人生を
           </h2>
         </div>

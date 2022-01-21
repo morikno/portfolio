@@ -18,16 +18,31 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": "./src",
-    "paths":{
-      "@*":[".*"],
-      "@blog":["./framework/blog"]
+    "paths": {
+      "@*": [".*"],
+      "@blog": ["./framework/blog"],
+      "@/functions/*":[ "styles/foundation/functions/*"],
+      "@/mixin/*":[ "styles/foundation/mixin/*"],
+      "@/reset/*":[ "styles/foundation/mixin/utility/*"],
+      "@/variable/*":[ "styles/foundation/variable/*"],
+      "@/structure/*":[ "styles/structure/*"],
+      "@/base/*":[ "styles/foundation/base/*"],
+      "@/utility/*":[ "styles/utility/*"],
+      "@/object/*":[ "styles/object/*"],
     }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "pages/index.js", "pages/_app.js", "pages/posts/[id].js", "pages/api/hello.js", "lib/posts.js", "components/date.js", "libs/client.tsx"  ],
+    "**/*.tsx",
+    "pages/index.js",
+    "pages/_app.js",
+    "pages/posts/[id].js",
+    "pages/api/hello.js",
+    "lib/posts.js",
+    "components/date.js",
+    "libs/client.tsx"
+  ],
   "exclude": [
     "node_modules"
   ]

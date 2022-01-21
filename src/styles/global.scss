@@ -1,58 +1,57 @@
 @charset "UTF-8";
 
 //foundation サイト全体のベース
-@import "styles/foundation/functions/_is-inside.scss";
-@import "styles/foundation/functions/_parent.scss";
-@import "styles/foundation/functions/_remove-unit.scss";
-@import "styles/foundation/functions/_screen.scss";
-@import "styles/foundation/mixin/_aspect-ratio.scss";
-@import "styles/foundation/mixin/_col.scss";
-@import "styles/foundation/mixin/_font-size.scss";
-@import "styles/foundation/mixin/_hover.scss";
-@import "styles/foundation/mixin/_lhCrop.scss";
-@import "styles/foundation/mixin/_mediaQueries.scss";
-@import "styles/foundation/mixin/_mixin.scss";
-@import "styles/foundation/mixin/_object-fit.scss";
-@import "styles/foundation/mixin/_pcOnly.scss";
-@import "styles/foundation/mixin/_replace.scss";
-@import "styles/foundation/mixin/_state.scss";
-@import "styles/foundation/mixin/_visually-hidden.scss";
+@import "@/functions/_is-inside.scss";
+@import "@/functions/_parent.scss";
+@import "@/functions/_remove-unit.scss";
+@import "@/functions/_screen.scss";
+@import "@/mixin/_aspect-ratio.scss";
+@import "@/mixin/_col.scss";
+@import "@/mixin/_font-size.scss";
+@import "@/mixin/_hover.scss";
+@import "@/mixin/_lhCrop.scss";
+@import "@/mixin/_mediaQueries.scss";
+@import "@/mixin/_mixin.scss";
+@import "@/mixin/_object-fit.scss";
+@import "@/mixin/_pcOnly.scss";
+@import "@/mixin/_replace.scss";
+@import "@/mixin/_state.scss";
+@import "@/mixin/_visually-hidden.scss";
 
-@import "styles/foundation/mixin/utility/_reset-button.scss";
-@import "styles/foundation/mixin/utility/_reset-input.scss";
-@import "styles/foundation/mixin/utility/_reset-select.scss";
-@import "styles/foundation/mixin/utility/_reset-textarea.scss";
+@import "@/reset/_reset-button.scss";
+@import "@/reset/_reset-input.scss";
+@import "@/reset/_reset-select.scss";
+@import "@/reset/_reset-textarea.scss";
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
 
-@import "styles/foundation/variable/_break_points.scss";
-@import "styles/foundation/variable/_color.scss";
-@import "styles/foundation/variable/_easing.scss";
-@import "styles/foundation/variable/_keyframes.scss";
+@import "@/variable/_break_points.scss";
+@import "@/variable/_color.scss";
+@import "@/variable/_easing.scss";
+@import "@/variable/_keyframes.scss";
 
-@import "styles/foundation/base/sanitize";
-@import "styles/foundation/base/base";
-// @import "styles/foundation/base/grid-system";//グリッドシステム 使用したい場合はコメントを外す
+@import "@/base/sanitize";
+@import "@/base/base";
 
 //structure プラグインなどの外部からのDLしたcssなど
-@import "styles/structure/fullscreenmenu";
-@import "styles/structure/js_fit-sidebar";
-@import "styles/structure/js_megamenu";
-@import "styles/structure/js_swiper";
-@import "styles/structure/js_smartphoto";
-@import "styles/structure/js_tablefix";
-@import "styles/structure/js_datepicker";
-@import "styles/structure/js_highlightjs-theme";
-@import "styles/structure/js_highlightjs";
-@import "styles/structure/js_cursor";
-@import "styles/structure/js_tab";
-@import "styles/structure/js_loader";
+@import "@/structure/fullscreenmenu";
+@import "@/structure/js_fit-sidebar";
+@import "@/structure/js_megamenu";
+@import "@/structure/js_swiper";
+@import "@/structure/js_smartphoto";
+@import "@/structure/js_tablefix";
+@import "@/structure/js_datepicker";
+@import "@/structure/js_highlightjs-theme";
+@import "@/structure/js_highlightjs";
+@import "@/structure/js_cursor";
+@import "@/structure/js_tab";
+@import "@/structure/js_loader";
 
 //pages 各ページの固有スタイル
 
 //utility 便利スタイル
-@import "styles/utility/_autoSpacer.scss";
-@import "styles/utility/_highlighter.scss";
-@import "styles/utility/_show.scss";
-@import "styles/utility/_utility.scss";
+@import "@/utility/_autoSpacer.scss";
+@import "@/utility/_highlighter.scss";
+@import "@/utility/_show.scss";
+@import "@/utility/_utility.scss";

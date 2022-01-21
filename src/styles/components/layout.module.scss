@@ -1,29 +1,29 @@
-@import "styles/foundation/functions/_is-inside.scss";
-@import "styles/foundation/functions/_parent.scss";
-@import "styles/foundation/functions/_remove-unit.scss";
-@import "styles/foundation/functions/_screen.scss";
-@import "styles/foundation/mixin/_aspect-ratio.scss";
-@import "styles/foundation/mixin/_col.scss";
-@import "styles/foundation/mixin/_font-size.scss";
-@import "styles/foundation/mixin/_hover.scss";
-@import "styles/foundation/mixin/_lhCrop.scss";
-@import "styles/foundation/mixin/_mediaQueries.scss";
-@import "styles/foundation/mixin/_mixin.scss";
-@import "styles/foundation/mixin/_object-fit.scss";
-@import "styles/foundation/mixin/_pcOnly.scss";
-@import "styles/foundation/mixin/_replace.scss";
-@import "styles/foundation/mixin/_state.scss";
-@import "styles/foundation/mixin/_visually-hidden.scss";
+@import "@/functions/_is-inside.scss";
+@import "@/functions/_parent.scss";
+@import "@/functions/_remove-unit.scss";
+@import "@/functions/_screen.scss";
+@import "@/mixin/_aspect-ratio.scss";
+@import "@/mixin/_col.scss";
+@import "@/mixin/_font-size.scss";
+@import "@/mixin/_hover.scss";
+@import "@/mixin/_lhCrop.scss";
+@import "@/mixin/_mediaQueries.scss";
+@import "@/mixin/_mixin.scss";
+@import "@/mixin/_object-fit.scss";
+@import "@/mixin/_pcOnly.scss";
+@import "@/mixin/_replace.scss";
+@import "@/mixin/_state.scss";
+@import "@/mixin/_visually-hidden.scss";
 
-@import "styles/foundation/mixin/utility/_reset-button.scss";
-@import "styles/foundation/mixin/utility/_reset-input.scss";
-@import "styles/foundation/mixin/utility/_reset-select.scss";
-@import "styles/foundation/mixin/utility/_reset-textarea.scss";
+@import "@/reset/_reset-button.scss";
+@import "@/reset/_reset-input.scss";
+@import "@/reset/_reset-select.scss";
+@import "@/reset/_reset-textarea.scss";
 
-@import "styles/foundation/variable/_break_points.scss";
-@import "styles/foundation/variable/_color.scss";
-@import "styles/foundation/variable/_easing.scss";
-@import "styles/foundation/variable/_keyframes.scss";
+@import "@/variable/_break_points.scss";
+@import "@/variable/_color.scss";
+@import "@/variable/_easing.scss";
+@import "@/variable/_keyframes.scss";
 
 .container{
 
